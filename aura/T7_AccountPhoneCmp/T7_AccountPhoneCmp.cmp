@@ -1,0 +1,19 @@
+<aura:component controller="T7_AccountPhoneController" implements="force:hasRecordId,flexipage:availableForAllPageTypes">
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="account" type="Object"/>
+    <aura:attribute name="phoneOld" type="String"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <lightning:card title="{!'Account: ' + v.account.Name}" iconName="standard:account">
+        <div class="slds-p-around_x-small">
+            <lightning:input type="tel"
+                             label="Phone field"
+                             name="phone"
+                             value="{!v.account.Phone}"/>
+            <br/>
+            <lightning:button label="Save"
+                              onclick="{!c.handleClick}"/>
+        </div>
+    </lightning:card>
+</aura:component>
