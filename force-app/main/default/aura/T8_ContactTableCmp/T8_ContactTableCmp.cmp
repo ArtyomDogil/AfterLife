@@ -1,3 +1,0 @@
-<aura:component implements="forceCommunity:themeLayout">
-    {!v.body}
-</aura:component>
