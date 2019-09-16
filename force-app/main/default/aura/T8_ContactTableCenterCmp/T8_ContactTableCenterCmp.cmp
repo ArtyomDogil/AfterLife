@@ -1,0 +1,9 @@
+ <aura:component implements="forceCommunity:availableForAllPageTypes">
+    <lightning:layout horizontalAlign="space" multipleRows="true">
+        <lightning:layoutItem size="12"
+                              mediumDeviceSize="12"
+                              padding="around-small">
+            <c:T8_ContactTableListCmp/>
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>
