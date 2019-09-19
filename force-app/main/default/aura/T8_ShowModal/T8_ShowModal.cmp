@@ -1,0 +1,6 @@
+<aura:component>
+    <lightning:overlayLibrary aura:id="overlayLib1"/>
+    <lightning:icon size="medium" iconName="action:approval" alternativeText="Approved" />
+    It work
+    <lightning:button name="cancel" label="Close" onclick="{!c.handleCancle}"/>
+</aura:component>
