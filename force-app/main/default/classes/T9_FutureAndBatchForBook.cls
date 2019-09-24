@@ -10,7 +10,6 @@ public class T9_FutureAndBatchForBook {
                 LIMIT 50000
             ];
             delete badBooksList;
-        System.debug('badBooksList.size()= ' + badBooksList.size());
         }
     }
 

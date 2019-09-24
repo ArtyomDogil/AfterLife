@@ -16,13 +16,12 @@ public class T9_BatchForBook implements Database.Batchable<sObject>, Database.St
             }
         }
 
-        List<Author__c> idNewAuthorList = [
+        idNewAuthor = [
             SELECT Id
             FROM Author__c
             WHERE AuthorName__c = 'AuthorForBadBooks'
             LIMIT 1
         ];
-        idNewAuthor = idNewAuthorList.get(0).Id;
 
         String query = 'SELECT Id, MainAuthorID__c, BookName__c FROM Book__c';
         return Database.getQueryLocator(query);
